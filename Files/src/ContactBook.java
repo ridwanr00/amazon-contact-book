@@ -49,7 +49,7 @@ public class ContactBook {
      *          value true
      **/
     public boolean addContact(Contact contact) {
-        if (numberOfContacts + 1 <= Integer.MAX_VALUE) {
+        if (numberOfContacts + 1 <= MAX_CONTACTS) {
             if (contactWithSameNumberExists(contact) == true) {
                 throw new IllegalArgumentException("Phone number already exist");
             }
